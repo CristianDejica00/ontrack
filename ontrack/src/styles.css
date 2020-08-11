@@ -1,0 +1,55 @@
+@font-face {
+    src:url("fonts/Barlow-Light.ttf");
+    font-family:barlowLight;
+}
+
+@font-face {
+    src:url("fonts/Barlow-Regular.ttf");
+    font-family:barlowRegular;
+}
+
+*:focus {
+    outline:none!important;
+}
+
+body {
+    font-family:barlowLight;
+    margin:0px;
+    display:flex;
+    background-color:rgb(250, 250, 250);
+    overflow-x:hidden;
+}
+
+app-root {
+    width:100%;
+}
+
+app-auth-main,
+app-auth-login,
+app-auth-register {
+    display:flex;
+    width:100%;
+}
+
+app-navbar {
+    display:flex;
+    align-items:center;
+    padding:0px 40px;
+    justify-content:space-between;
+    height:50px;
+    width:100%;
+    box-sizing:border-box;
+    background-color:rgb(255, 255, 255);
+    border-bottom:1px solid rgb(240, 240, 240);
+}
+
+.hoverable {
+    transition:opacity 0.05s ease-in-out;
+}
+
+.hoverable:hover {
+    cursor:pointer;
+    opacity:0.6;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

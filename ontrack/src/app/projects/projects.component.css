@@ -1,0 +1,148 @@
+#projects_filter_area {
+    height:60px;
+    width:100%;
+    padding:0px 40px;
+    display:flex;
+    justify-content:space-between;
+    box-sizing:border-box;
+    align-items:center;
+}
+
+#projects_filter_wrapper {
+    height:30px;
+    display:flex;
+}
+
+#projects_filter_box_1 {
+    display:flex;
+    height:30px;
+    padding:0px 10px;
+    align-items:center;
+    font-size:14px;
+    border-radius:3px 0px 0px 3px;
+    border:1px solid rgb(230, 230, 230);
+    background-color:white;
+    color:rgb(100, 100, 100);
+}
+
+#projects_filter_box_1 svg {
+    height:10px;
+    margin-right:5px;
+}
+
+#projects_filter_box_1 svg path {
+    fill:rgb(100, 100, 100);
+}
+
+#projects_filter_button {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:150px;
+    height:30px;
+    padding:0px 10px;
+    border:1px solid rgb(230, 230, 230);
+    border-left:0px;
+    background-color:white;
+    cursor:pointer;
+}
+
+#projects_filter_button svg {
+    width:8px;
+    margin-top:3px;
+    margin-left:10px;
+}
+
+#projects_direction_button {
+    height:30px;
+    width:30px;
+    background-color:white;
+    border:1px solid rgb(230, 230, 230);
+    margin-left:10px;
+    display:flex;
+    justify-content:center;
+    cursor:pointer;
+    align-items:center;
+}
+
+#projects_direction_button svg {
+    height:13px;
+}
+
+#projects_direction_button svg path {
+    fill:rgb(100, 100, 100);
+}
+
+#projects_filter_area_left,
+#projects_filter_area_right {
+    display:flex;
+}
+
+#projects_filter_add_button {
+    height:30px;
+    padding:0px 10px;
+    background-color:#6196FF;
+    color:white;
+    border-radius:3px;
+    align-items:center;
+    display:flex;
+    font-size:14px;
+}
+
+#projects_filter_add_button svg {
+    height:10px;
+    margin-right:10px;
+}
+
+#projects_filter_add_button svg path {
+    fill:white;
+}
+
+#projects_filter_add_button:hover {
+    opacity:0.7;
+    cursor:pointer;
+}
+
+#content_wrapper {
+    padding:0px 40px;
+    box-sizing:border-box;
+}
+
+#project_area_wrapper {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-gap:40px;
+    padding-bottom:50px;
+}
+
+app-project-block {
+    background-color:white;
+    border:1px solid rgb(230, 230, 230);
+    box-sizing:border-box;
+}
+
+app-project-block:hover {
+    opacity:0.6;
+    cursor:pointer;
+}
+
+
+
+
+
+@media(max-width:1600px) {
+
+    #project_area_wrapper {
+        grid-template-columns:1fr 1fr;
+    }
+    
+}
+
+
+@media(max-width:800px) {
+
+    #project_area_wrapper {
+        grid-template-columns:1fr;
+    }
+    
+}

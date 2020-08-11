@@ -1,0 +1,23 @@
+<div (click)=goToProjectId(projects.id)>
+    <p class="project_title" style="border-left:4px solid {{projects.color}}">
+        {{projects.name}}
+    </p>
+    <p class="project_people">
+        {{projects.people}}
+    </p>
+    <div class="project_data">
+        <span>{{projects.progress}}%</span>
+        <div class="project_attachment_box">
+            <svg viewBox="0 0 444 506" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M258.849 32.1903C301.026 -9.98635 369.408 -9.98635 411.584 32.1903C453.761 74.3669 453.761 142.749 411.584 184.925L215.716 380.794C190.722 405.787 150.2 405.787 125.206 380.794C100.212 355.8 100.212 315.278 125.206 290.284L272.991 142.499C280.802 134.688 293.465 134.688 301.276 142.499C309.086 150.309 309.086 162.973 301.276 170.783L153.49 318.569C144.118 327.941 144.118 343.137 153.49 352.51C162.863 361.882 178.059 361.882 187.431 352.51L383.3 156.641C409.856 130.085 409.856 87.0302 383.3 60.4745C356.744 33.9189 313.689 33.9189 287.133 60.4745L73.5872 274.021C29.8485 317.759 29.8485 388.674 73.5872 432.413C117.326 476.151 188.24 476.151 231.979 432.413L397.442 266.95C405.253 259.139 417.916 259.139 425.726 266.95C433.537 274.76 433.537 287.423 425.726 295.234L260.263 460.697C200.904 520.057 104.663 520.057 45.303 460.697C-14.0567 401.337 -14.0567 305.096 45.303 245.737L258.849 32.1903Z" fill="black"/>
+            </svg>
+            <span>1</span>
+        </div>
+    </div>
+    <div class="project_loader">
+        <div *ngIf="lessThan25()" class="project_loader_bar" style="width:{{projects.progress}}%;background-color:#FE5959"></div>
+        <div *ngIf="lessThan50()" class="project_loader_bar" style="width:{{projects.progress}}%;background-color:#FFA34E"></div>
+        <div *ngIf="lessThan75()" class="project_loader_bar" style="width:{{projects.progress}}%;background-color:#F1F51F"></div>
+        <div *ngIf="lessThan100()" class="project_loader_bar" style="width:{{projects.progress}}%;background-color:#56F13D"></div>
+    </div>
+</div>

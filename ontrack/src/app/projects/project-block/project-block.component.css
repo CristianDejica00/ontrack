@@ -1,0 +1,51 @@
+.project_title {
+    margin:15px 0px;
+    font-size:18px;
+    padding:5px 20px;
+}
+
+.project_people {
+    font-size:14px;
+    padding:0px 24px;
+    box-sizing:border-box;
+    color:grey;
+}
+
+.project_data {
+    height:30px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    padding:0px 24px;
+    box-sizing:border-box;
+}
+
+.project_data svg {
+    height:16px;
+}
+
+.project_data svg path {
+    fill:grey;
+}
+
+.project_loader {
+    background-color:rgb(230, 230, 230);
+    height:3px;
+    flex:1;
+    margin:5px 24px;
+    margin-bottom:15px;
+}
+
+.project_loader_bar {
+    height:100%;
+}
+
+.project_attachment_box {
+    display:flex;
+    align-items:center;
+}
+
+.project_attachment_box svg {
+    margin-right:5px;
+}
